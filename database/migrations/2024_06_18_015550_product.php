@@ -13,7 +13,13 @@ class Product extends Migration
      */
     public function up()
     {
-        //
+        Schema::create("product", function(Blueprint $table){
+            $table->bigIncrements("id");
+            $table->string("producto", 255);
+            $table->integer('stock')->default(0);
+            $table->decimal('price', 8, 2);
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ class Product extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists("product");
     }
 }

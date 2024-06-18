@@ -13,7 +13,13 @@ class Customer extends Migration
      */
     public function up()
     {
-        //
+        Schema::create("customer", function(Blueprint $table){
+            $table->bigIncrements("id");
+            $table->bigInteger("cedula");
+            $table->string("nombre");
+            $table->string("email");
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ class Customer extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists("customer");
     }
 }

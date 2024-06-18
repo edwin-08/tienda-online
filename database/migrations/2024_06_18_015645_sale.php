@@ -13,7 +13,14 @@ class Sale extends Migration
      */
     public function up()
     {
-        //
+        Schema::create("sale", function (Blueprint $table) {
+            $table->bigIncrements("id");
+            $table->bigInteger("id_customer");
+            $table->bigInteger("id_product");
+            $table->integer("cantidad");
+            $table->decimal("precio", 8, 2);
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +30,6 @@ class Sale extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists("sale");
     }
 }

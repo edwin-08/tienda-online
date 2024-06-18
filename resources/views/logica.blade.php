@@ -57,7 +57,7 @@
             data.done((res) => {
                 if (res.status == true) {
                     document.getElementById('numeroOrganizados').innerHTML = res.numeros
-                    document.getElementById('formOrganizarNumeros').reset()
+                   // document.getElementById('formOrganizarNumeros').reset()
                 }
             })
             data.fail(() => {
