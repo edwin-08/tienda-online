@@ -30,22 +30,22 @@
                     <span>Lógica programación</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{ route('facturacion') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Facturación</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{ route('products') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Productos</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{ route('customers') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Clientes</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{ route('estadisticas') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Reportes</span></a>
             </li>

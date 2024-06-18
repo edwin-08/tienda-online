@@ -19,6 +19,7 @@ class Sale extends Migration
             $table->bigInteger("id_product");
             $table->integer("cantidad");
             $table->decimal("precio", 8, 2);
+            $table->string("estado", 45);
             $table->timestamps();
         });
     }
